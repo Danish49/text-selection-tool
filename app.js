@@ -26,7 +26,7 @@ function displayToolbar() {
     toolbar.style.left = "50%";
     toolbar.style.transform = "translateX(-50%)";
     toolbar.style.top =
-      rect.top + window.scrollY - tweetButton.offsetHeight - 38 + "px";
+      rect.top + window.scrollY - tweetButton.offsetHeight - 100 + "px";
     toolbar.appendChild(copyButton);
   } else {
     removeToolbar();
