@@ -129,6 +129,12 @@ copyButton.addEventListener("touchend", function (e) {
       }
     );
   }
+
+  document.addEventListener("touchend", function (e) {
+  setTimeout(function () {
+    displayToolbar(e);
+  }, 0);
+});
 });
 
   }
