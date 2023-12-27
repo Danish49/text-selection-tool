@@ -1,7 +1,18 @@
 document.addEventListener("touchend", function () {
   let selectedText = window.getSelection().toString().trim();
   if (selectedText !== "") {
-    console.log(selectedText);
+    let range = window.getSelection().getRangeAt(0);
+    let rect = range.getBoundingClientRect();
+    document.body.appendChild(toolbar);
+    toolbar.appendChild(tweetButton);
+    toolbar.style.position = "absolute";
+    toolbar.style.left = "50%";
+    toolbar.style.transform = "translateX(-50%)";
+    toolbar.style.top =
+      rect.top + window.scrollY - tweetButton.offsetHeight - 38 + "px";
+    toolbar.appendChild(copyButton);
+  } else {
+    removeToolbar();
   }
 });
 
