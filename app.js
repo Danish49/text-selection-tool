@@ -139,3 +139,13 @@ copyButton.addEventListener("touchend", function (e) {
 
   }
 });
+
+
+document.addEventListener("selectionchange", function (e) {
+  let selectedText = window.getSelection().toString().trim();
+  if (selectedText !== "") {
+    displayToolbar(e);
+  } else {
+    removeToolbar();
+  }
+});
