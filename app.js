@@ -94,3 +94,14 @@ document.addEventListener("selectionchange", function () {
     removeToolbar();
   }
 });
+
+
+document.addEventListener("selectionchange", function () {
+  let selectedText = window.getSelection().toString().trim();
+  if (selectedText !== "") {
+    document.body.style.color = "transparent";
+    setTimeout(function () {
+      document.body.style.color = "initial";
+    }, 1);
+  }
+});
