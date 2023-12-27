@@ -93,5 +93,5 @@ document.addEventListener("touchstart", function () {
  } else {
     removeToolbar();
  }
- });
+ }); 
 
