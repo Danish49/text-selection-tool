@@ -77,21 +77,21 @@ document.addEventListener("click", function () {
   }, 0);
 });
 
-let touchStarted = false;
+// let touchStarted = false;
 
-document.addEventListener("touchstart", function () {
-  touchStarted = true;
-});
+// document.addEventListener("touchstart", function () {
+//   touchStarted = true;
+// });
 
-document.addEventListener("touchend", function () {
-  touchStarted = false;
-});
+// document.addEventListener("touchend", function () {
+//   touchStarted = false;
+// });
 
-document.addEventListener("selectionchange", function () {
-  if (touchStarted) {
-    displayToolbar();
-  } else {
-    removeToolbar();
-  }
-});
+// document.addEventListener("selectionchange", function () {
+//   if (touchStarted) {
+//     displayToolbar();
+//   } else {
+//     removeToolbar();
+//   }
+// });
 
